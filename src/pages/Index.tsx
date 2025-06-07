@@ -163,8 +163,12 @@ const Index = () => {
           
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="bg-gray-800 border-gray-700 overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="h-48 bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center">
-                <Code className="h-16 w-16 text-white" />
+              <div className="h-48 flex items-center justify-center p-4">
+                <img 
+                  src="/lovable-uploads/b0e6836f-b75d-4916-979e-2d6730258926.png" 
+                  alt="Restaurant Chatbot"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-3 text-white">Restaurant Chatbot Project</h3>
@@ -181,8 +185,12 @@ const Index = () => {
             </Card>
 
             <Card className="bg-gray-800 border-gray-700 overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="h-48 bg-gradient-to-br from-purple-600 to-purple-800 flex items-center justify-center">
-                <Briefcase className="h-16 w-16 text-white" />
+              <div className="h-48 flex items-center justify-center p-4">
+                <img 
+                  src="/lovable-uploads/067db98c-700d-4f55-af51-491b2ac52038.png" 
+                  alt="Password Manager"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-3 text-white">Password Manager Project</h3>
