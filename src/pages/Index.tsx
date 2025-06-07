@@ -93,7 +93,7 @@ const Index = () => {
             <div className="relative">
               <div className="w-80 h-80 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full p-2 flex items-center justify-center">
                 <img 
-                  src="/lovable-uploads/2fb59ca9-7093-497e-aaef-b27331454315.png" 
+                  src="/lovable-uploads/f0ad1ff2-c2b4-4afd-bef1-12739b12282b.png" 
                   alt="Boya Siva Sai Kumar"
                   className="w-full h-full object-cover rounded-full"
                 />
