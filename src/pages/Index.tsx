@@ -91,8 +91,12 @@ const Index = () => {
           
           <div className="flex justify-center">
             <div className="relative">
-              <div className="w-80 h-80 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
-                <User className="h-40 w-40 text-white" />
+              <div className="w-80 h-80 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full p-2 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/2fb59ca9-7093-497e-aaef-b27331454315.png" 
+                  alt="Boya Siva Sai Kumar"
+                  className="w-full h-full object-cover rounded-full"
+                />
               </div>
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-blue-500 rounded-full opacity-20 animate-pulse"></div>
               <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-purple-500 rounded-full opacity-20 animate-pulse delay-1000"></div>
