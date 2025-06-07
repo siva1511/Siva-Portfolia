@@ -138,11 +138,11 @@ const Index = () => {
                     <p className="text-gray-400">G. Pullaiah College of Engineering and Technology, Kurnool</p>
                   </div>
                   <div className="border-l-2 border-blue-400 pl-4">
-                    <h4 className="font-semibold text-white">Diploma in Mechanical Engineering (2019-2022)</h4>
+                    <h4 className="font-semibold text-white">Diploma in Mechanical Engineering (2020-2023)</h4>
                     <p className="text-gray-400">ESC Govt Polytechnic College Nandyal</p>
                   </div>
                   <div className="border-l-2 border-blue-400 pl-4">
-                    <h4 className="font-semibold text-white">SSC (2019)</h4>
+                    <h4 className="font-semibold text-white">SSC (2020)</h4>
                     <p className="text-gray-400">Sri Chaithyna EM High School</p>
                   </div>
                 </div>
