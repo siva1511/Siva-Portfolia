@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -224,7 +225,7 @@ const Index = () => {
 
             <Card className="bg-gray-800 border-gray-700 overflow-hidden hover:shadow-xl transition-shadow">
               <div className="h-48 flex items-center justify-center p-4">
-                <img src="/lovable-uploads/067db98c-700d-4f55-af51-491b2ac52038.png" alt="Password Manager" className="w-full h-full object-contain" />
+                <img src="/lovable-uploads/680036e6-41b5-49ab-93d1-ea358a9ea671.png" alt="Password Manager" className="w-full h-full object-contain" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-3 text-white">Password Manager Project</h3>
