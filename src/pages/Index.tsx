@@ -4,8 +4,19 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { ArrowRight, Github, Linkedin, Mail, Phone, MapPin, User, Code, Briefcase, GraduationCap, Award, ChevronDown } from "lucide-react";
+import emailjs from '@emailjs/browser';
+import { useToast } from "@/hooks/use-toast";
+
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -15,6 +26,65 @@ const Index = () => {
       setActiveSection(sectionId);
     }
   };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!formData.name || !formData.email || !formData.message) {
+      toast({
+        title: "Error",
+        description: "Please fill in all fields.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      await emailjs.send(
+        'service_scvq32m',
+        'template_dawntl7',
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          to_name: 'Boya Siva Sai Kumar',
+        },
+        'RZ-3AUkizlIcfNxir'
+      );
+
+      toast({
+        title: "Success!",
+        description: "Your message has been sent successfully. I'll get back to you soon!",
+      });
+
+      setFormData({
+        name: '',
+        email: '',
+        message: ''
+      });
+
+    } catch (error) {
+      console.error('EmailJS error:', error);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again or contact me directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return <div className="min-h-screen bg-gray-900 text-white">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-gray-900/90 backdrop-blur-sm border-b border-gray-800">
@@ -280,21 +350,49 @@ const Index = () => {
             </div>
             
             <Card className="bg-gray-900 border-gray-700 p-6">
-              <form className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-300 mb-2">Name</label>
-                  <input type="text" className="w-full px-3 py-2 bg-gray-800 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-blue-400" placeholder="Your Name" />
+                  <input 
+                    type="text" 
+                    name="name"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    className="w-full px-3 py-2 bg-gray-800 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-blue-400" 
+                    placeholder="Your Name" 
+                    required
+                  />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-300 mb-2">Email</label>
-                  <input type="email" className="w-full px-3 py-2 bg-gray-800 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-blue-400" placeholder="your.email@example.com" />
+                  <input 
+                    type="email" 
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className="w-full px-3 py-2 bg-gray-800 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-blue-400" 
+                    placeholder="your.email@example.com" 
+                    required
+                  />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-300 mb-2">Message</label>
-                  <textarea rows={4} className="w-full px-3 py-2 bg-gray-800 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-blue-400" placeholder="Your message..."></textarea>
+                  <textarea 
+                    rows={4} 
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    className="w-full px-3 py-2 bg-gray-800 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-blue-400" 
+                    placeholder="Your message..."
+                    required
+                  ></textarea>
                 </div>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg">
-                  Send Message
+                <Button 
+                  type="submit" 
+                  disabled={isSubmitting}
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </Button>
               </form>
             </Card>
