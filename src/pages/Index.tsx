@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -127,7 +126,7 @@ const Index = () => {
             </div>
 
             <div className="flex space-x-6 pt-4">
-              <a href="https://linkedin.com/in/siva-sai-kumar" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a href="https://www.linkedin.com/in/siva-sai-251b04280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
                 <Linkedin className="h-6 w-6" />
               </a>
               <a href="mailto:sivasai78342@gmail.com" className="text-gray-400 hover:text-blue-400 transition-colors">
