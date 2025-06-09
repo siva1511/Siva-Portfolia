@@ -1,10 +1,9 @@
-
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { ArrowRight, Github, Linkedin, Mail, Phone, MapPin, User, Code, Briefcase, GraduationCap, Award, ChevronDown, Instagram } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, Phone, MapPin, User, Code, Briefcase, GraduationCap, Award, ChevronDown } from "lucide-react";
 import emailjs from '@emailjs/browser';
 import { useToast } from "@/hooks/use-toast";
 
@@ -135,9 +134,6 @@ const Index = () => {
               </a>
               <a href="https://github.com/sivasaikumar" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
                 <Github className="h-6 w-6" />
-              </a>
-              <a href="https://www.instagram.com/siva_15_11_?igsh=MWMyYTkyempxYnhlMA==&utm_source=ig_contact_invite" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-400 transition-colors">
-                <Instagram className="h-6 w-6" />
               </a>
             </div>
           </div>
