@@ -296,22 +296,10 @@ const Index = () => {
               <div className="flex items-start space-x-4">
                 <Award className="h-8 w-8 text-blue-400 flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">AICTE Virtual Internships</h3>
-                  <div className="space-y-4">
-                    <div>
-                      <h4 className="font-medium text-blue-400">Embedded Systems (Cohort 8)</h4>
-                      <p className="text-gray-300">Gained hands-on experience with embedded system design and programming.</p>
-                    </div>
-                    <Separator className="bg-gray-600" />
-                    <div>
-                      <h4 className="font-medium text-blue-400">Cybersecurity (Cohort 9)</h4>
-                      <p className="text-gray-300">Learned security protocols, threat analysis, and defense mechanisms.</p>
-                    </div>
-                    <Separator className="bg-gray-600" />
-                    <div>
-                      <h4 className="font-medium text-blue-400">Java Full Stack Development (Cohort 10)</h4>
-                      <p className="text-gray-300">Comprehensive training in full-stack development using Java ecosystem.</p>
-                    </div>
+                  <h3 className="text-xl font-semibold text-white mb-2">Make Skilled</h3>
+                  <div>
+                    <h4 className="font-medium text-blue-400">Full Stack Development Bootcamp</h4>
+                    <p className="text-gray-300">Comprehensive training in full-stack web development covering modern technologies and best practices.</p>
                   </div>
                 </div>
               </div>
