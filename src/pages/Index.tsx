@@ -132,7 +132,7 @@ const Index = () => {
               <a href="mailto:sivasai78342@gmail.com" className="text-gray-400 hover:text-blue-400 transition-colors">
                 <Mail className="h-6 w-6" />
               </a>
-              <a href="https://github.com/sivasaikumar" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a href="https://github.com/siva1511" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
                 <Github className="h-6 w-6" />
               </a>
             </div>
