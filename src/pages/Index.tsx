@@ -340,6 +340,30 @@ const Index = () => {
               <div className="flex items-start space-x-4">
                 <Award className="h-8 w-8 text-blue-400 flex-shrink-0 mt-1" />
                 <div>
+                  <h3 className="text-xl font-semibold text-white mb-2">SkillDzire</h3>
+                  <div className="mb-4">
+                    <h4 className="font-medium text-blue-400">Artificial Intelligence Internship</h4>
+                    <p className="text-gray-400 text-sm mb-2">May 2025 - June 2025</p>
+                    <p className="text-gray-300">Successfully completed a comprehensive short-term internship program focused on Artificial Intelligence technologies and applications.</p>
+                    <div className="grid grid-cols-2 gap-4 mt-3 text-sm">
+                      <div>
+                        <span className="text-gray-400">Certificate ID:</span>
+                        <span className="text-white ml-2">SDST-25-16945</span>
+                      </div>
+                      <div>
+                        <span className="text-gray-400">Duration:</span>
+                        <span className="text-white ml-2">6 weeks</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="bg-gray-800 border-gray-700 p-6">
+              <div className="flex items-start space-x-4">
+                <Award className="h-8 w-8 text-blue-400 flex-shrink-0 mt-1" />
+                <div>
                   <h3 className="text-xl font-semibold text-white mb-2">Make Skilled</h3>
                   <div>
                     <h4 className="font-medium text-blue-400">Full Stack Development Bootcamp</h4>
@@ -442,4 +466,5 @@ const Index = () => {
       </footer>
     </div>;
 };
+
 export default Index;
