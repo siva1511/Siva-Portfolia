@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -367,7 +366,18 @@ const Index = () => {
                   <h3 className="text-xl font-semibold text-white mb-2">Make Skilled</h3>
                   <div>
                     <h4 className="font-medium text-blue-400">Full Stack Development Bootcamp</h4>
-                    <p className="text-gray-300">Comprehensive training in full-stack web development covering modern technologies and best practices.</p>
+                    <p className="text-gray-400 text-sm mb-2">December 4th - 9th, 2023</p>
+                    <p className="text-gray-300">Successfully completed Full Stack Development Bootcamp organized as part of Corporate Innovation 2023, in partnership with Microsoft Partner Network.</p>
+                    <div className="grid grid-cols-2 gap-4 mt-3 text-sm">
+                      <div>
+                        <span className="text-gray-400">Certificate ID:</span>
+                        <span className="text-white ml-2">23AT5A3103</span>
+                      </div>
+                      <div>
+                        <span className="text-gray-400">Score:</span>
+                        <span className="text-white ml-2">90</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
