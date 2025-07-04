@@ -1,9 +1,10 @@
+
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { ArrowRight, Github, Linkedin, Mail, Phone, MapPin, User, Code, Briefcase, GraduationCap, Award, ChevronDown } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, Phone, MapPin, User, Code, Briefcase, GraduationCap, Award, ChevronDown, ExternalLink } from "lucide-react";
 import emailjs from '@emailjs/browser';
 import { useToast } from "@/hooks/use-toast";
 
@@ -206,18 +207,61 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="bg-gray-800 border-gray-700 overflow-hidden hover:shadow-xl transition-shadow">
               <div className="h-48 flex items-center justify-center p-4">
-                <img src="/lovable-uploads/b0e6836f-b75d-4916-979e-2d6730258926.png" alt="Restaurant Chatbot" className="w-full h-full object-contain" />
+                <div className="w-full h-full bg-gradient-to-br from-green-600 to-yellow-600 rounded-lg flex items-center justify-center">
+                  <div className="text-center text-white">
+                    <h3 className="text-2xl font-bold mb-2">GrainPalette</h3>
+                    <p className="text-sm">Rice Classification</p>
+                  </div>
+                </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-3 text-white">Restaurant Chatbot Project</h3>
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="text-xl font-semibold text-white">GrainPalette - Rice Grain Classification System</h3>
+                  <a href="https://github.com/siva1511" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">
+                    <ExternalLink className="h-5 w-5" />
+                  </a>
+                </div>
                 <p className="text-gray-300 mb-4">
-                  AI-powered chatbot that automates customer interactions for restaurant reservations and menu queries. 
-                  Built with natural language processing capabilities to provide seamless customer service.
+                  A deep learning-based classification system for different rice grain types including Arborio, Basmati, Ipsala, Jasmine, and Karacadag. 
+                  Developed using TensorFlow and CNNs with a well-organized dataset and Streamlit-based user interface for predictions.
                 </p>
+                
+                <div className="grid grid-cols-2 gap-4 mb-4 text-sm">
+                  <div className="text-center p-2 bg-gray-700 rounded">
+                    <div className="text-green-400 font-bold text-lg">94%</div>
+                    <div className="text-gray-300">accuracy</div>
+                  </div>
+                  <div className="text-center p-2 bg-gray-700 rounded">
+                    <div className="text-blue-400 font-bold text-lg">5</div>
+                    <div className="text-gray-300">models</div>
+                  </div>
+                  <div className="text-center p-2 bg-gray-700 rounded">
+                    <div className="text-purple-400 font-bold text-lg">1K+</div>
+                    <div className="text-gray-300">datasets</div>
+                  </div>
+                  <div className="text-center p-2 bg-gray-700 rounded">
+                    <div className="text-yellow-400 font-bold text-sm">Real-time</div>
+                    <div className="text-gray-300">predictions</div>
+                  </div>
+                </div>
+
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold text-white mb-2">Key Features:</h4>
+                  <ul className="text-sm text-gray-300 space-y-1">
+                    <li>• Multi-class rice grain classification</li>
+                    <li>• Deep learning CNN architecture</li>
+                    <li>• Interactive Streamlit web interface</li>
+                    <li>• Comprehensive dataset management</li>
+                    <li>• Real-time prediction capabilities</li>
+                  </ul>
+                </div>
+
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary" className="bg-blue-600 text-white">AI/ML</Badge>
-                  <Badge variant="secondary" className="bg-gray-600 text-white">Python</Badge>
-                  <Badge variant="secondary" className="bg-gray-600 text-white">NLP</Badge>
+                  <Badge variant="secondary" className="bg-blue-600 text-white">Python</Badge>
+                  <Badge variant="secondary" className="bg-green-600 text-white">TensorFlow</Badge>
+                  <Badge variant="secondary" className="bg-purple-600 text-white">Streamlit</Badge>
+                  <Badge variant="secondary" className="bg-red-600 text-white">CNN</Badge>
+                  <Badge variant="secondary" className="bg-yellow-600 text-white">Deep Learning</Badge>
                 </div>
               </div>
             </Card>
