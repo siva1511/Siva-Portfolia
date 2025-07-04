@@ -216,8 +216,14 @@ const Index = () => {
               <div className="p-6">
                 <div className="flex items-center justify-between mb-3">
                   <h3 className="text-xl font-semibold text-white">GrainPalette - Rice Grain Classification System</h3>
-                  <a href="https://github.com/siva1511" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">
-                    <ExternalLink className="h-5 w-5" />
+                  <a 
+                    href="https://github.com/siva1511/GrainPalette" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors text-sm font-medium"
+                  >
+                    <Github className="h-4 w-4" />
+                    <span>View on GitHub</span>
                   </a>
                 </div>
                 <p className="text-gray-300 mb-4">
