@@ -203,7 +203,7 @@ const Index = () => {
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Portfolio</h2>
           
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
             <Card className="bg-gray-800 border-gray-700 overflow-hidden hover:shadow-xl transition-shadow">
               <div className="h-48 flex items-center justify-center p-4">
                 <div className="w-full h-full bg-gradient-to-br from-green-600 to-yellow-600 rounded-lg flex items-center justify-center">
@@ -267,24 +267,6 @@ const Index = () => {
                   <Badge variant="secondary" className="bg-purple-600 text-white">Streamlit</Badge>
                   <Badge variant="secondary" className="bg-red-600 text-white">CNN</Badge>
                   <Badge variant="secondary" className="bg-yellow-600 text-white">Deep Learning</Badge>
-                </div>
-              </div>
-            </Card>
-
-            <Card className="bg-gray-800 border-gray-700 overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="h-48 flex items-center justify-center p-4">
-                <img src="/lovable-uploads/680036e6-41b5-49ab-93d1-ea358a9ea671.png" alt="Password Manager" className="w-full h-full object-contain" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-3 text-white">Password Manager Project</h3>
-                <p className="text-gray-300 mb-4">
-                  Full-stack application enabling secure password management and categorization. Features encryption, 
-                  user authentication, and intuitive interface for managing digital credentials safely.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary" className="bg-purple-600 text-white">Full Stack</Badge>
-                  <Badge variant="secondary" className="bg-gray-600 text-white">Java</Badge>
-                  <Badge variant="secondary" className="bg-gray-600 text-white">MySQL</Badge>
                 </div>
               </div>
             </Card>
