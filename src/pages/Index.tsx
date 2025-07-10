@@ -203,7 +203,7 @@ const Index = () => {
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Portfolio</h2>
           
-          <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8">
             <Card className="bg-gray-800 border-gray-700 overflow-hidden hover:shadow-xl transition-shadow">
               <div className="h-48 flex items-center justify-center p-4">
                 <div className="w-full h-full bg-gradient-to-br from-green-600 to-yellow-600 rounded-lg flex items-center justify-center">
@@ -267,6 +267,53 @@ const Index = () => {
                   <Badge variant="secondary" className="bg-purple-600 text-white">Streamlit</Badge>
                   <Badge variant="secondary" className="bg-red-600 text-white">CNN</Badge>
                   <Badge variant="secondary" className="bg-yellow-600 text-white">Deep Learning</Badge>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="bg-gray-800 border-gray-700 overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="h-48 flex items-center justify-center p-4">
+                <div className="w-full h-full bg-gradient-to-br from-blue-600 to-cyan-600 rounded-lg flex items-center justify-center">
+                  <div className="text-center text-white">
+                    <h3 className="text-2xl font-bold mb-2">Weather App</h3>
+                    <p className="text-sm">Real-time Weather</p>
+                  </div>
+                </div>
+              </div>
+              <div className="p-6">
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="text-xl font-semibold text-white">Weather App</h3>
+                  <a 
+                    href="https://github.com/siva1511/Weather-app" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors text-sm font-medium"
+                  >
+                    <Github className="h-4 w-4" />
+                    <span>View on GitHub</span>
+                  </a>
+                </div>
+                <p className="text-gray-300 mb-4">
+                  A simple weather application that shows weather information using HTML, CSS, and JavaScript.
+                  It fetches real-time weather data and displays temperature, humidity, and weather conditions for a given location.
+                </p>
+                
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold text-white mb-2">📌 Features:</h4>
+                  <ul className="text-sm text-gray-300 space-y-1">
+                    <li>🔍 Search weather by city name</li>
+                    <li>🌡️ Displays temperature, humidity, and weather conditions</li>
+                    <li>🎨 Responsive design using CSS</li>
+                    <li>🔄 Real-time data using public weather API (like OpenWeatherMap)</li>
+                  </ul>
+                </div>
+
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="secondary" className="bg-orange-600 text-white">HTML</Badge>
+                  <Badge variant="secondary" className="bg-blue-600 text-white">CSS</Badge>
+                  <Badge variant="secondary" className="bg-yellow-600 text-white">JavaScript</Badge>
+                  <Badge variant="secondary" className="bg-green-600 text-white">Weather API</Badge>
+                  <Badge variant="secondary" className="bg-purple-600 text-white">Responsive</Badge>
                 </div>
               </div>
             </Card>
