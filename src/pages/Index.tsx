@@ -398,6 +398,38 @@ const Index = () => {
               <div className="flex items-start space-x-4">
                 <Award className="h-8 w-8 text-blue-400 flex-shrink-0 mt-1" />
                 <div>
+                  <h3 className="text-xl font-semibold text-white mb-2">SmartBridge Educational Services</h3>
+                  <div className="mb-4">
+                    <h4 className="font-medium text-blue-400">Short-Term Internship on Artificial Intelligence & Machine Learning</h4>
+                    <p className="text-gray-400 text-sm mb-2">Completed - July 2025</p>
+                    <p className="text-gray-300">Successfully completed a 2-month internship program on AI & ML in collaboration with Andhra Pradesh State Council of Higher Education through G. Pulla Reddy Engineering College (Autonomous), JNTUA.</p>
+                    <div className="grid grid-cols-2 gap-4 mt-3 text-sm">
+                      <div>
+                        <span className="text-gray-400">Certificate ID:</span>
+                        <span className="text-white ml-2">EXT-APSCHE_AIML-46288</span>
+                      </div>
+                      <div>
+                        <span className="text-gray-400">Duration:</span>
+                        <span className="text-white ml-2">2 months</span>
+                      </div>
+                      <div>
+                        <span className="text-gray-400">Hall Ticket:</span>
+                        <span className="text-white ml-2">23ATSA3103</span>
+                      </div>
+                      <div>
+                        <span className="text-gray-400">Mode:</span>
+                        <span className="text-white ml-2">Virtual</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="bg-gray-800 border-gray-700 p-6">
+              <div className="flex items-start space-x-4">
+                <Award className="h-8 w-8 text-blue-400 flex-shrink-0 mt-1" />
+                <div>
                   <h3 className="text-xl font-semibold text-white mb-2">Make Skilled</h3>
                   <div>
                     <h4 className="font-medium text-blue-400">Full Stack Development Bootcamp</h4>
