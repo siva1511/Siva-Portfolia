@@ -379,9 +379,9 @@ const Index = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">Andhra Pradesh State Council of Higher Education</h3>
                   <div className="mb-4">
-                    <h4 className="font-medium text-blue-400">Short-Term Internship on Artificial Intelligence & Machine Learning</h4>
+                    <h4 className="font-medium text-blue-400">Certificate of Completion - Artificial Intelligence & Machine Learning</h4>
                     <p className="text-gray-400 text-sm mb-2">Completed - July 21, 2025</p>
-                    <p className="text-gray-300">Successfully completed a 2-month internship program on AI & ML organized by SmartBridge Educational Services Pvt. Ltd. in collaboration with Andhra Pradesh State Council of Higher Education through G. Pulla Reddy College Of Engineering & Technology, JNTUA.</p>
+                    <p className="text-gray-300">Successfully completed Short-Term Internship of 2 months on Artificial Intelligence & Machine Learning organized by SmartBridge Educational Services Pvt. Ltd. in collaboration with Andhra Pradesh State Council of Higher Education through G Pullaiah College Of Engineering & Technology, JNTUA.</p>
                     <div className="grid grid-cols-2 gap-4 mt-3 text-sm">
                       <div>
                         <span className="text-gray-400">Certificate ID:</span>
