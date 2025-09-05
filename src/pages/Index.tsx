@@ -169,7 +169,7 @@ const Index = () => {
                 </h3>
                 <div className="space-y-4">
                   <div className="border-l-2 border-blue-400 pl-4">
-                    <h4 className="font-semibold text-white">B.Tech in CSE-AI (2022-2026)</h4>
+                    <h4 className="font-semibold text-white">B.Tech in CSE-AI (2023-2026)</h4>
                     <p className="text-gray-400">G. Pullaiah College of Engineering and Technology, Kurnool</p>
                   </div>
                   <div className="border-l-2 border-blue-400 pl-4">
