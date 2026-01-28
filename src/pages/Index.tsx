@@ -48,7 +48,7 @@ const Index = () => {
     }
     setIsSubmitting(true);
     try {
-      await emailjs.send('service_scvq32m', 'template_dawntl7', {
+      await emailjs.send('service_6s60h2q', 'template_dawntl7', {
         from_name: formData.name,
         from_email: formData.email,
         message: formData.message,
