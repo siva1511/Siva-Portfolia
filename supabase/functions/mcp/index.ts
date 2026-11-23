@@ -76,18 +76,18 @@ var list_projects_default = defineTool3({
   handler: () => {
     const projects = [
       {
-        name: "GrainPalette - Rice Grain Classification System",
-        description: "A deep learning-based classification system for rice grain types (Arborio, Basmati, Ipsala, Jasmine, Karacadag). Built with TensorFlow CNNs and a Streamlit UI for real-time predictions.",
-        stats: { accuracy: "94%", models: 5, dataset: "1K+ samples", predictions: "real-time" },
+        name: "Smart Diet AI \u2013 Personalized Diet Plan Generator",
+        description: "Developed an AI/ML-based application that analyzes medical reports and health parameters to generate personalized diet recommendations. The application uses OCR, Machine Learning and NLP to extract health information, detect potential health conditions, and generate personalized diet plans.",
         features: [
-          "Multi-class rice grain classification",
-          "Deep learning CNN architecture",
-          "Interactive Streamlit web interface",
-          "Comprehensive dataset management",
-          "Real-time prediction capabilities"
+          "Medical report upload (PDF and images)",
+          "OCR-based health parameter extraction",
+          "Health condition detection using ML models",
+          "Personalized diet plan generation",
+          "AI-powered health explanations",
+          "Downloadable PDF diet reports"
         ],
-        tech: ["Python", "TensorFlow", "Streamlit", "CNN", "Deep Learning"],
-        github: "https://github.com/siva1511/GrainPalette"
+        tech: ["Python", "Streamlit", "Machine Learning", "Scikit-learn", "LightGBM", "EasyOCR", "Pytesseract", "NLP", "SQLite"],
+        github: "https://github.com/siva1511/Smart-Diet-AI"
       },
       {
         name: "Weather App",

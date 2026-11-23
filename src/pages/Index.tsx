@@ -195,62 +195,42 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="bg-gray-800 border-gray-700 overflow-hidden hover:shadow-xl transition-shadow">
               <div className="h-48 flex items-center justify-center p-4">
-                <div className="w-full h-full bg-gradient-to-br from-green-600 to-yellow-600 rounded-lg flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <h3 className="text-2xl font-bold mb-2">GrainPalette</h3>
-                    <p className="text-sm">Rice Classification</p>
-                  </div>
-                </div>
+                <img src="/smart-diet-ai-thumbnail.png" alt="Smart Diet AI personalized nutrition dashboard" className="w-full h-full object-cover rounded-lg" />
               </div>
               <div className="p-6">
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-xl font-semibold text-white">GrainPalette - Rice Grain Classification System</h3>
-                  <a href="https://github.com/siva1511/GrainPalette" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors text-sm font-medium">
+                <div className="flex flex-col gap-3 mb-3 sm:flex-row sm:items-center sm:justify-between">
+                  <h3 className="text-xl font-semibold text-white">Smart Diet AI – Personalized Diet Plan Generator</h3>
+                  <a href="https://github.com/siva1511/Smart-Diet-AI" target="_blank" rel="noopener noreferrer" className="flex w-fit shrink-0 items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors text-sm font-medium">
                     <Github className="h-4 w-4" />
                     <span>View on GitHub</span>
                   </a>
                 </div>
                 <p className="text-gray-300 mb-4">
-                  A deep learning-based classification system for different rice grain types including Arborio, Basmati, Ipsala, Jasmine, and Karacadag. 
-                  Developed using TensorFlow and CNNs with a well-organized dataset and Streamlit-based user interface for predictions.
+                  Developed an AI/ML-based application that analyzes medical reports and health parameters to generate personalized diet recommendations. The application uses OCR, Machine Learning and NLP to extract health information, detect potential health conditions, and generate personalized diet plans.
                 </p>
                 
-                <div className="grid grid-cols-2 gap-4 mb-4 text-sm">
-                  <div className="text-center p-2 bg-gray-700 rounded">
-                    <div className="text-green-400 font-bold text-lg">94%</div>
-                    <div className="text-gray-300">accuracy</div>
-                  </div>
-                  <div className="text-center p-2 bg-gray-700 rounded">
-                    <div className="text-blue-400 font-bold text-lg">5</div>
-                    <div className="text-gray-300">models</div>
-                  </div>
-                  <div className="text-center p-2 bg-gray-700 rounded">
-                    <div className="text-purple-400 font-bold text-lg">1K+</div>
-                    <div className="text-gray-300">datasets</div>
-                  </div>
-                  <div className="text-center p-2 bg-gray-700 rounded">
-                    <div className="text-yellow-400 font-bold text-sm">Real-time</div>
-                    <div className="text-gray-300">predictions</div>
-                  </div>
-                </div>
-
                 <div className="mb-4">
                   <h4 className="text-sm font-semibold text-white mb-2">Key Features:</h4>
                   <ul className="text-sm text-gray-300 space-y-1">
-                    <li>• Multi-class rice grain classification</li>
-                    <li>• Deep learning CNN architecture</li>
-                    <li>• Interactive Streamlit web interface</li>
-                    <li>• Comprehensive dataset management</li>
-                    <li>• Real-time prediction capabilities</li>
+                    <li>• Medical report upload (PDF and images)</li>
+                    <li>• OCR-based health parameter extraction</li>
+                    <li>• Health condition detection using ML models</li>
+                    <li>• Personalized diet plan generation</li>
+                    <li>• AI-powered health explanations</li>
+                    <li>• Downloadable PDF diet reports</li>
                   </ul>
                 </div>
 
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="secondary" className="bg-blue-600 text-white">Python</Badge>
-                  <Badge variant="secondary" className="bg-green-600 text-white">TensorFlow</Badge>
-                  <Badge variant="secondary" className="bg-purple-600 text-white">Streamlit</Badge>
-                  <Badge variant="secondary" className="bg-red-600 text-white">CNN</Badge>
-                  <Badge variant="secondary" className="bg-yellow-600 text-white">Deep Learning</Badge>
+                  <Badge variant="secondary" className="bg-green-600 text-white">Streamlit</Badge>
+                  <Badge variant="secondary" className="bg-purple-600 text-white">Machine Learning</Badge>
+                  <Badge variant="secondary" className="bg-red-600 text-white">Scikit-learn</Badge>
+                  <Badge variant="secondary" className="bg-yellow-600 text-white">LightGBM</Badge>
+                  <Badge variant="secondary" className="bg-cyan-600 text-white">EasyOCR</Badge>
+                  <Badge variant="secondary" className="bg-orange-600 text-white">Pytesseract</Badge>
+                  <Badge variant="secondary" className="bg-indigo-600 text-white">NLP</Badge>
+                  <Badge variant="secondary" className="bg-gray-600 text-white">SQLite</Badge>
                 </div>
               </div>
             </Card>
